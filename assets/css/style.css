@@ -1,0 +1,159 @@
+html,
+body {
+  font-size: 20px;
+  height: 100%;
+  margin: 0;
+  background-color: #ffebed;
+  background-image: url("dynamic-style.png");
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100%;
+  margin-bottom: 100px;
+  padding: 15px;
+  background-color: rgb(247, 247, 247);
+}
+
+.navi {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.navtext {
+  list-style: none;
+  display: inline;
+  padding: 5px;
+  color: #777777;
+  transition: 0.25s;
+}
+
+header {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  color: #4aaaa5;
+}
+
+.logo {
+  float: left;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #777777;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p,
+a {
+  line-height: 34px;
+  margin-bottom: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+#zshw {
+  width: 15%;
+  height: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+#bio a {
+  color: #777777;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+#myportfolio figure a img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  position: relative;
+  transition: 0.25s;
+}
+
+figcaption {
+  margin-top: -30%;
+  text-align: center;
+  padding: 12px 0;
+  width: 100%;
+  background-color: #555555;
+  color: #ffebed;
+  text-decoration: none;
+  position: absolute;
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  width: 95%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1.5px solid #888888;
+  font-size: 20px;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 200px;
+}
+
+button[type="submit"] {
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  color: #444444;
+  background: none;
+  font-size: 20px;
+  border: 1.5px solid #ffffff;
+  transition: 0.25s;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #333333;
+  transition: 0.25s;
+}
+@media only screen and (max-width: 640px) {
+  .header {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    position: left;
+  }
+}
